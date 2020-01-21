@@ -3,7 +3,6 @@
   <name>appIni</name>
   <description>Un proyecto en blanco que usa Apache Cordova para ayudarle a compilar una aplicación que tiene varias plataformas móviles como destino: Android, iOS y la plataforma universal de Windows.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Su nombre aquí</author>
-  <vs:is-from-base-template>true</vs:is-from-base-template>
   <vs:template-name>BlankJS</vs:template-name>
   <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
   <engine name="android" spec="5.2.1" />
