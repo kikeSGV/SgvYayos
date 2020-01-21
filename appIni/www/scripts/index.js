@@ -19,7 +19,7 @@
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        window.location.replace('http://aplicaciones.sgv.es/cuss');
+        window.location.replace('./appIni.html');
     };
 
     function onPause() {
