@@ -29,7 +29,7 @@ var url;
         var enlaceParticipacion = document.getElementById('contenedor');
         enlaceParticipacion.setAttribute('style', 'display:block;');
 
-        window.location.replace('./appIni.html');
+        //window.location.replace('./appIni.html');
     };
 
     function onPause() {
