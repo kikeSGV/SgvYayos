@@ -15,6 +15,28 @@ var url;
         $.mobile.navigate("#pageApp");
     });
 
+    $('#scanQqr').click(function () {
+        cordova.plugins.barcodeScanner.scan(
+            function (result) {
+                if (!result.cancelled) {
+                    // En este caso solo queremos que procese código QR
+                    if (result.format == "QR_CODE") {
+                        var value = result.text;
+                        // Contenido del código QR
+                        alert(value);
+                    } else {
+                        alert("Ops, se escaneo un código pero al parecer no es QR");
+                    }
+                } else {
+                    alert("El usuario se ha saltado el escaneo.");
+                }
+            },
+            function (error) {
+                alert("Ha ocurrido un error: " + error);
+            }
+        );
+    })
+
     function onDeviceReady() {
         // Controlar la pausa de Cordova y reanudar eventos
         document.addEventListener( 'pause', onPause.bind( this ), false );
